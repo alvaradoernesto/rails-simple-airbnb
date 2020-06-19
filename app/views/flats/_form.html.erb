@@ -1,0 +1,11 @@
+<div class="form">
+  <%= simple_form_for @flat do |f| %>
+    <%= f.input :name, placeholder: "Name", label: false %>
+    <%= f.input :description, placeholder: "Description", label: false %>
+    <%= f.input :address, placeholder: "Address", label: false %>
+    <%= f.input :number_of_guests, placeholder: "Number of Guests", label: false %>
+    <%= f.input :price_per_night, placeholder: "Price per Night", label: false %>
+    <%= f.input :picture_url, placeholder: "Pictur URL", label: false %>
+    <%= f.button :submit, "Add", class: "btn btn-primary"%>
+  <% end %>
+</div>

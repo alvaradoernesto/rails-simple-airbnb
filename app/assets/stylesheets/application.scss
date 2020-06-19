@@ -1,0 +1,205 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+body {
+  background-color: white;
+}
+
+.navbar {
+  height: 70px;
+  background-color: #F8F9FA;
+}
+
+.navbar > .logo {
+  font-size: 24px
+}
+
+.btn-primary {
+  background-color: white;
+  color: #167FFB;
+  border-radius: 8px;
+}
+
+.btn-warning {
+  background-color: white;
+  color: #E67E22;
+  border-radius: 8px;
+}
+
+.btn-danger {
+  background-color: white;
+  color: #FD1015;
+  border-radius: 8px;
+}
+
+.container-flats {
+  margin-top: 20px;
+}
+
+.container-flats > h1 {
+  margin-bottom: 20px;
+}
+
+.container-flats > .row {
+  flex-wrap:wrap;
+}
+
+.filling-empty-space-childs {
+    width:205px; /*the width of the images in this example*/
+    height:0; /*Important! for the divs to collapse should they fall in a new row*/
+}
+
+.card {
+  width: 300px;
+  margin: 0 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.card > .flat-info {
+  background-color: lightgrey;
+  height: 180px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card > .flat-image {
+  height: 200px;
+}
+
+.card > .flat-info > .flat-address > p {
+  font-size: 14px;
+}
+
+.card > .flat-info > .flat-address {
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.flat-details {
+  display: flex;
+}
+
+.flat-details > .flat-guests {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.flat-details > .flat-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card > .more-info {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  padding: 20px 20%
+}
+
+.flat-top {
+  height: 400px;
+  background-color: lightgrey;
+}
+
+.flat-container {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 420px;
+  width: 100%
+}
+
+.flat-info-box {
+  width: 63%;
+}
+
+.misc {
+  width: 35%;
+}
+
+.flat-info-card {
+  background-color: #F8F9FA;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.flat-info-card > h2 {
+  margin-bottom: 4px
+}
+
+.flat-info-card > h4 {
+  margin-bottom: 12px
+}
+
+.flat-info-card > p {
+  margin-bottom: 16px
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.input > .label {
+  width: 20%;
+  text-align: right;
+  padding-right: 8px;
+  background-color: lightgrey;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  height: 45px;
+  border: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.input > input {
+  flex-grow: 1;
+  height: 45px;
+  border: 1px solid lightgrey;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.btn-success {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+}
+
+.d-flex {
+  justify-content: space-around;
+  font-size: 32px;
+  align-items: center;
+}
+
+.d-flex > h6 {
+  margin: 0;
+}

@@ -1,0 +1,48 @@
+<div class="flat-top" style="background-image: url('<%= @flat.picture_url %>'); background-size: cover; background-position: center">
+</div>
+
+<div class="flat-container">
+  <div class="flat-info-box">
+    <div class="flat-info-card">
+      <h2><%= @flat.name %></h2>
+      <p><%= @flat.address %></p>
+    </div>
+    <div class="flat-info-card">
+      <h4>A bit more about this flat...</h4>
+      <p><%= @flat.description %></p>
+    </div>
+    <div class="flat-info-card">
+      <h4>Details</h4>
+      <div class="flat-details">
+        <div class="flat-guests">
+          <i class="fas fa-user-friends"></i>
+          <div class="empty-space" style="width: 12px"></div>
+          <%= @flat.number_of_guests %>
+        </div>
+        <div class="flat-price">
+          <i class="fas fa-euro-sign"></i>
+          <div class="empty-space" style="width: 12px"></div>
+          <%= @flat.price_per_night %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="misc">
+    <div class="flat-info-card">
+      <h4>Book this place</h4>
+      <form action="">
+        <div class="input"><div class="label">From:</div></label><input type="text" id="from"><br></div>
+        <div class="input"><div class="label">To:</div></label><input type="text" id="to"><br></div>
+        <input type="submit" value="Book" class="btn btn-success">
+      </form>
+    </div>
+    <div class="flat-info-card d-flex">
+      <h6>Share</h6>
+      <div class="empty-space" style="width: 15%"></div>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-pinterest-square"></i>
+      <i class="fas fa-envelope-square"></i>
+    </div>
+  </div>
+</div>
